@@ -17,7 +17,7 @@
 # 		jess/tor-relay -f /etc/tor/torrc.exit
 #
 FROM alpine:latest
-MAINTAINER Jessica Frazelle <jess@docker.com>
+MAINTAINER Michael Kozono <mike@kozono.co>
 
 # Note: Tor is only in testing repo -> http://pkgs.alpinelinux.org/packages?package=emacs&repo=all&arch=x86_64
 RUN apk update && apk add \
