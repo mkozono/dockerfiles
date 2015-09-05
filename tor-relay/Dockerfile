@@ -8,13 +8,13 @@
 # 		--name tor-relay \
 # 		jess/tor-relay -f /etc/tor/torrc.bridge
 #
-# Exit relay:
+# Middle relay:
 # 	docker run -d \
 #		--restart always \
 #		-v /etc/localtime:/etc/localtime \
 #		-p 9001:9001 \
 # 		--name tor-relay \
-# 		jess/tor-relay -f /etc/tor/torrc.exit
+# 		jess/tor-relay -f /etc/tor/torrc.middle
 #
 FROM alpine:latest
 MAINTAINER Michael Kozono <mike@kozono.co>
