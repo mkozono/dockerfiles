@@ -6,7 +6,7 @@
 #		-v /etc/localtime:/etc/localtime \
 #		-p 9001:9001 \
 # 		--name tor-relay \
-# 		jess/tor-relay -f /etc/tor/torrc.bridge
+# 		monozok/tor-relay -f /etc/tor/torrc.bridge
 #
 # Middle relay:
 # 	docker run -d \
@@ -14,7 +14,7 @@
 #		-v /etc/localtime:/etc/localtime \
 #		-p 9001:9001 \
 # 		--name tor-relay \
-# 		jess/tor-relay -f /etc/tor/torrc.middle
+# 		monozok/tor-relay -f /etc/tor/torrc.middle
 #
 FROM alpine:latest
 MAINTAINER Michael Kozono <mike@kozono.co>
