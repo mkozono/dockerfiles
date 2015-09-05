@@ -129,7 +129,7 @@ AccountingStart month 1 00:00
 ## it's an email address and/or generate a new address for this purpose.
 #ContactInfo Random Person <nobody AT example dot com>
 ## You might also include your PGP or GPG fingerprint if you have one:
-ContactInfo ${CONTACT_GPG_FINGERPRINT} ${CONTACT_NAME} ${CONTACT_EMAIL}
+#ContactInfo 0xFFFFFFFF Random Person <nobody AT example dot com>
 
 ## Uncomment this to mirror directory information for others. Please do
 ## if you have enough bandwidth.
