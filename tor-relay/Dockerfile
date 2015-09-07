@@ -3,7 +3,6 @@
 # Bridge relay:
 #	docker run -d \
 #		--restart always \
-#		-v /etc/localtime:/etc/localtime \
 #		-p 9001:9001 \
 # 		--name tor-relay \
 # 		monozok/tor-relay -f /etc/tor/torrc.bridge
@@ -11,7 +10,6 @@
 # Middle relay:
 # 	docker run -d \
 #		--restart always \
-#		-v /etc/localtime:/etc/localtime \
 #		-p 9001:9001 \
 # 		--name tor-relay \
 # 		monozok/tor-relay -f /etc/tor/torrc.middle
