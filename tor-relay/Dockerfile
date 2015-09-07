@@ -19,7 +19,7 @@ MAINTAINER Michael Kozono <mike@kozono.co>
 
 # Note: Tor is only in testing repo -> http://pkgs.alpinelinux.org/packages?package=emacs&repo=all&arch=x86_64
 RUN apk update && apk add \
-	tor \
+	tor openntpd \
 	--update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	&& rm -rf /var/cache/apk/*
 
