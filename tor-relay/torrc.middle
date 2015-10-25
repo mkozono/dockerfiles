@@ -105,16 +105,16 @@ Nickname pulseserversbrazil
 ## Note that units for these config options are bytes (per second), not
 ## bits (per second), and that prefixes are binary prefixes, i.e. 2^10,
 ## 2^20, etc.
-RelayBandwidthRate 500 KBytes  # Throttle traffic to 100KB/s (800Kbps)
-RelayBandwidthBurst 1 MBytes # But allow bursts up to 200KB (1600Kb)
+RelayBandwidthRate 250 KBytes  # Throttle traffic to 250KB/s (2Mbps)
+RelayBandwidthBurst 500 KBytes # But allow bursts up to 500KB/s (4Mbps)
 
 ## Use these to restrict the maximum traffic per day, week, or month.
 ## Note that this threshold applies separately to sent and received bytes,
 ## not to their sum: setting "4 GB" may allow up to 8 GB total before
 ## hibernating.
 ##
-## Set a maximum of 4 gigabytes each way per period.
-AccountingMax 1000 GBytes
+## Set a maximum of 200 gigabytes each way per period.
+AccountingMax 200 GBytes
 ## Each period starts daily at midnight (AccountingMax is per day)
 #AccountingStart day 00:00
 ## Each period starts on the 3rd of the month at 15:00 (AccountingMax
